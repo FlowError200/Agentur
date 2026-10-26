@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darlin & Co. – IT-Infrastruktur & Webdesign</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HERO-BEREICH
+       ========================================================================== -->
+  <header class="hero-section">
+    <div class="content-wrapper">
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <a href="#" class="brand-container">
+          <div class="logo-mark">D</div>
+          <span class="logo-text">DARLIN &amp; CO.</span>
+        </a>
+
+        <!-- Mobile Page-Slider (auf Smartphones und schmalen Tablets aktiv) -->
+        <div class="mobile-page-nav">
+          <a href="kontakt.html" class="page-nav-arrow" aria-label="Zu Über uns">&lt;</a>
+          <span class="page-nav-current">Startseite</span>
+          <a href="leistungen.html" class="page-nav-arrow" aria-label="Nächste Sektion">&gt;</a>
+        </div>
+
+        <!-- Hauptmenü Links + Mail-Button -->
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link-active" >STARTSEITE</a>
+          <a href="leistungen.html">LEISTUNGEN</a>
+          <a href="ueber-uns.html">ÜBER UNS</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="kontakt.html">KONTAKT</a>
+        </div>
+
+        <!-- Burger Icon für Mobilgeräte & iPad Mini -->
+        <button class="burger-menu" id="burgerToggle" aria-label="Menü öffnen">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          PRÄZISE TECHNOLOGIE<br>
+          TRIFFT AUF DURCHDACHTES<br>
+          DESIGN.
+        </h1>
+        <p class="hero-subtitle">
+          Wir verbinden IT-Infrastruktur, KI-Beratung und zukunftsweisendes Webdesign zu einer starken, unverwechselbaren Identität.
+        </p>
+        <div class="hero-cta-group">
+          <a href="kontakt.html" class="btn-cyan">Kennenlernen vereinbaren</a>
+          <a href="kontakt.html" class="btn-outline">Projekt anfragen</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HAUPTINHALT: ZWEI WELTEN & MATRIX
+       ========================================================================== -->
+  <main class="main-content" id="leistungen">
+    <div class="content-wrapper">
+
+      <section class="section">
+        <h2 class="section-title">ZWEI WELTEN. EINE AGENTUR.</h2>
+
+        <!-- DESKTOP GRID (ab 901px aktiv) -->
+        <div class="cards-grid desktop-cards-grid">
+          
+          <!-- Karte 1: Design -->
+          <article class="service-card card-design" id="design">
+            <span class="card-tag">Gestaltung &amp; Identität</span>
+            <h3>DESIGN &amp; KOMMUNIKATION</h3>
+            <p>
+              Ästhetische, intuitive Interfaces und unverwechselbare Markenauftritte, die Vertrauen schaffen und im Gedächtnis bleiben.
+            </p>
+            <ul class="service-list">
+              <li>Webdesign &amp; UX/UI Design</li>
+              <li>Corporate Identity &amp; Branding</li>
+              <li>Visuelle Kommunikationskonzepte</li>
+              <li>Responsive Layouts für alle Geräte</li>
+            </ul>
+            <a href="leistungen.html" class="card-link">Mehr zu Design &rarr;</a>
+          </article>
+
+          <!-- Synergie-Badge mittig im Desktop-Grid -->
+          <div class="synergy-badge" aria-hidden="true">+</div>
+
+          <!-- Karte 2: IT & KI -->
+          <article class="service-card card-tech" id="it-ki">
+            <span class="card-tag">Struktur &amp; Technologie</span>
+            <h3>IT-SERVICE &amp; KI-BERATUNG</h3>
+            <p>
+              Zuverlässige Systeme, automatisierte Prozesse und sichere digitale Fundamente für langfristigen geschäftlichen Erfolg.
+            </p>
+            <ul class="service-list">
+              <li>IT-Infrastruktur &amp; Systemberatung</li>
+              <li>KI-Integration &amp; Workflow-Automatisierung</li>
+              <li>Wartung, Sicherheit &amp; laufender Support</li>
+              <li>Cloud-Lösungen &amp; moderne Schnittstellen</li>
+            </ul>
+            <a href="leistungen.html" class="card-link">Mehr zu IT &amp; KI &rarr;</a>
+          </article>
+
+        </div>
+
+        <!-- MOBILE DIREKTVERGLEICHS-MATRIX (unter 901px aktiv) -->
+        <div class="mobile-comparison-card">
+          
+          <!-- Matrix Kopfzeile -->
+          <div class="matrix-header">
+            <div class="matrix-col-title">
+              <span class="matrix-badge badge-design">Design</span>
+              <h4>GESTALTUNG &amp; MARKE</h4>
+            </div>
+            <div class="matrix-divider-v"></div>
+            <div class="matrix-col-title">
+              <span class="matrix-badge badge-tech">IT &amp; KI</span>
+              <h4>STRUKTUR &amp; TECHNIK</h4>
+            </div>
+          </div>
+
+          <!-- Matrix Zeilen -->
+          <div class="matrix-rows">
+            <div class="matrix-row">
+              <div class="matrix-cell cell-design">
+                <strong>Visuelle Identität</strong>
+                <p>UI/UX, Webseiten &amp; Corporate Branding</p>
+              </div>
+              <div class="matrix-cell cell-tech">
+                <strong>Fundament &amp; Cloud</strong>
+                <p>Infrastruktur, Server &amp; IT-Netzwerke</p>
+              </div>
+            </div>
+
+            <div class="matrix-row">
+              <div class="matrix-cell cell-design">
+                <strong>Nutzererlebnis</strong>
+                <p>Intuitive Oberflächen, die begeistern</p>
+              </div>
+              <div class="matrix-cell cell-tech">
+                <strong>Smarte Abläufe</strong>
+                <p>KI-Workflows &amp; Prozess-Automatisierung</p>
+              </div>
+            </div>
+
+            <div class="matrix-row">
+              <div class="matrix-cell cell-design">
+                <strong>Markenwirkung</strong>
+                <p>Starker Auftritt &amp; Kundenvertrauen</p>
+              </div>
+              <div class="matrix-cell cell-tech">
+                <strong>Sicherheit</strong>
+                <p>Wartung, Backups &amp; laufender Support</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Synergie Banner -->
+          <div class="matrix-synergy-banner">
+            <span>+ Beide Welten nahtlos vereint</span>
+          </div>
+
+          <!-- Matrix Buttons -->
+          <div class="matrix-actions">
+            <a href="leistungen.html" class="btn-matrix-link link-design">Design Details &rarr;</a>
+            <a href="leistungen.html" class="btn-matrix-link link-tech">IT &amp; KI Details &rarr;</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- PORTFOLIO VORSCHAU -->
+      <section class="section" id="portfolio">
+        <h2 class="section-title">WAS WIR GEMEINSAM SCHAFFEN</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div class="preview-box"></div>
+            <h4>Ganzheitlicher Marken- und Webauftritt</h4>
+            <p>UI/UX Redesign, responsives Frontend &amp; sichere Systemintegration.</p>
+          </div>
+          <div class="portfolio-card">
+            <div class="preview-box"></div>
+            <h4>Automatisierte IT- und Cloud-Prozesse</h4>
+            <p>Effiziente Arbeitsabläufe, KI-gestützte Datenverwaltung &amp; Wartung.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="cta-banner" id="kontakt">
+        <h3>Bereit für den nächsten Schritt?</h3>
+        <p>Lass uns besprechen, wie wir Design und Technologie für dein Projekt verbinden können.</p>
+        <a href="mailto:kontakt@darlin-co.de" class="btn-cyan">Projekt anfragen</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER (Milchglas-Design)
+       ========================================================================== -->
+  <footer class="footer-section">
+    <div class="footer-glow glow-pink" aria-hidden="true"></div>
+    <div class="footer-glow glow-cyan" aria-hidden="true"></div>
+
+    <div class="content-wrapper">
+      <div class="footer-glass-card">
+        
+        <div class="footer-main-row">
+          <!-- Spalte 1: Brand -->
+          <div class="footer-brand">
+            <a href="#" class="brand-container">
+              <div class="logo-mark">D</div>
+              <span class="logo-text">DARLIN &amp; CO.</span>
+            </a>
+            <p class="footer-tagline">
+              Gestaltung, die im Kopf bleibt. Technologie, die verlässlich trägt. Die Digitalagentur für Marken mit Anspruch.
+            </p>
+          </div>
+
+          <!-- Spalte 2: Navigation -->
+          <div class="footer-nav">
+            <span class="footer-heading">NAVIGATION</span>
+            <div class="footer-links-grid">
+              <a href="index.html">Startseite</a>
+              <a href="leistungen.html">Leistungen</a>
+              <a href="ueber-uns.html">Über uns</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+          </div>
+
+          <!-- Spalte 3: Social Media -->
+          <div class="footer-social">
+            <span class="footer-heading">FOLGE UNS</span>
+            <div class="social-icons">
+              <a href="#" class="social-btn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.55a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-row">
+          <span>&copy; 2026 Darlin &amp; Co. Alle Rechte vorbehalten.</span>
+          <div class="legal-links">
+            <a href="#impressum">Impressum</a>
+            <span class="sep">&bull;</span>
+            <a href="#datenschutz">Datenschutz</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
